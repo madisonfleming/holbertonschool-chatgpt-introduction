@@ -2,5 +2,6 @@
 import sys
 import os
 
-for arg in sys.argv:
-    print(os.path.basename(arg))
+if __name__ == "__main__":
+    for arg in sys.argv:
+        print(os.path.basename(arg))
