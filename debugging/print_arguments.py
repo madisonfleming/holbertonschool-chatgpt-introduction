@@ -3,5 +3,6 @@ import sys
 import os
 
 if __name__ == "__main__":
-    for arg in sys.argv:
-        print(os.path.basename(arg))
+    print(os.path.basename(sys.argv[0]))
+    for arg in sys.argv[1:]:
+        print(arg)
